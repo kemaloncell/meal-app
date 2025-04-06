@@ -5,10 +5,15 @@ import CategoryGridTile from '../components/CategoryGridTile'
 
 const numColumns = 2
 
+// you can use "navigation which is paramter of categoriesScreen when is called with Stack from the app.js but 
+// you can't use this inside the child function suchas CategoryGridTile so you have to pass as a prop or call inside the
+// CategoryGridTile component wihs useNavigation
 function CategoriesScreen({ navigation }) {
     function renderCategoryItem(itemData) {
         function pressHandler() {
-            navigation.navigate('MealsOverview')
+            navigation.navigate('MealsOverview', {
+                categoryId: itemData.item.id,
+            })
         }
         
     return (

@@ -1,4 +1,4 @@
-import { StyleSheet, Text } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import CategoriesScreen from './screens/CategoryScreen';
 import MealsOverviewScreen from './screens/MealsOverviewScreen';
